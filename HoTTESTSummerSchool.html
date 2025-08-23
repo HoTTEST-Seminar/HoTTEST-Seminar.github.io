@@ -4,146 +4,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      #container-narrow {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 7px;
+      }
+      #schedule td {
+        width: 33%;
+        text-align: center;
+      }
+    </style>
     <base target="_blank">
-    <title>HoTTEST Summer School</title>
+    <title>HoTTEST Summer School 2022</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
   </head>
   <body>
-    <h2>HoTTEST Summer School 2022</h2>
-    <p><span>The <strong>HoTTEST Summer School 2022</strong> will take&#160;</span><span>place online everywhere in the world during the months of July and&#160;</span><span>August 2022.&#160;</span><span>It will start with parallel introductions to&#160;homotopy type theory and formalization, and end with a series of colloquia&#160;introducing more advanced topics and exciting areas for further study.</span></p>
-    <p><span>The school will run both synchronously and asynchronously. The lectures will be delivered live (between 2:30-4pm UTC) and paired with various tutorial sessions run by teaching assistants. The course will also feature a discord-based all-hours Q&amp;A and an online archive of all course materials so that participants can follow along on their own schedule.</span></p>
-    <p><span>A central aim of the summer school is to build community among all of the participants, irrespective of geography. &#160;To further this, we will hold some online social events (e.g. game nights) for the summer school staff and participants.</span></p>
+  <div id="container-narrow">
+    <h1 style="font-size: 48px">HoTTEST Summer School 2022</h1>
+
+    <p>The <strong>HoTTEST Summer School 2022</strong> will take place online everywhere in the
+    world during the months of July and August 2022. It will start with parallel introductions to
+    homotopy type theory and formalization, and end with a series of colloquia introducing more
+    advanced topics and exciting areas for further study.</p>
+
+    <p>The school will run both synchronously and asynchronously. The lectures will be delivered
+    live (between 2:30-4pm UTC) and paired with various tutorial sessions run by teaching
+    assistants. The course will also feature a discord-based all-hours Q&amp;A and an online archive
+    of all course materials so that participants can follow along on their own schedule.</p>
+
+    <p>A central aim of the summer school is to build community among all of the participants,
+    irrespective of geography. To further this, we will hold some online social events (e.g. game
+    nights) for the summer school staff and participants.</p>
+
     <p>Details will be announced here in due course.</p>
-    <h2><span>Essential information</span></h2>
-    <ul class="squarelist">
-    <li><span><strong>Dates:&#160;</strong>July-August 2022.</span></li>
-    <li><strong>Live lectures:&#160;</strong>2:30-4 PM UTC.</li>
-    <li><strong>Discord:&#160;</strong><a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdiscord.gg%2FtkhJ9zCGs9&amp;data=05%7C01%7Ceriehl%40jhu.edu%7Cb2ae3805f6084a36b89c08da245d7606%7C9fa4f438b1e6473b803f86f8aedf0dec%7C0%7C0%7C637862281082931682%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=tU8fs6BCSitINHsWGTwUJUD9GqCuvXcSR2EUPmIEwl4%3D&amp;reserved=0" moz-do-not-send="true" originalsrc="https://discord.gg/tkhJ9zCGs9" rel="noopener noreferrer" shash="RqUUkmTIvn5VpzPSH85R6JPghW558YCsESxQLNRMsjzDuPlsn1APl0RbwxOv5mWVDgqfRTvMBmKSbNUZZIFzvfNpEkLF6UFW2qEwt/O3U0SNgAI++2pJLOokh7V/ObdfOKwvOcGLFLlnqDxBd7eFbmqE9icWti7obIIuK4tI8YM=" target="_blank">https://discord.gg/tkhJ9zCGs9</a></li>
-    <li><strong>GitHub:</strong>&#160;<a href="https://github.com/martinescardo/HoTTEST-Summer-School">repository</a>.</li>
+
+    <h2>Essential information</h2>
+
+    <ul>
+    <li><strong>Dates:</strong> July-August 2022.</li>
+    <li><strong>Live lectures:</strong> 2:30-4 PM UTC.</li>
+    <li><strong>Discord:</strong> <a href="https://discord.gg/tkhJ9zCGs9">https://discord.gg/tkhJ9zCGs9</a></li>
+    <li><strong>GitHub:</strong> <a href="https://github.com/martinescardo/HoTTEST-Summer-School">repository</a>.</li>
     <li><strong>Youtube:</strong> <a href="https://www.youtube.com/channel/UC-9jDbJ-HegCFuWuam1SfvQ">HoTTEST</a></li>
-    <li><span> <strong>Google Calendar:</strong> <a href="https://calendar.google.com/calendar/embed?src=0a4ik9o5vhkgjlnk6no3ttnuko%40group.calendar.google.com&amp;ctz=America%2FToronto" rel="noopener noreferrer" target="_blank">link</a></span></li>
+    <li><strong>Google Calendar:</strong> <a href="https://calendar.google.com/calendar/embed?src=0a4ik9o5vhkgjlnk6no3ttnuko%40group.calendar.google.com&amp;ctz=America%2FToronto" rel="noopener noreferrer" target="_blank">link</a></li>
     </ul>
+
     <h2>Audience</h2>
-    <p><span>This school is for everyone and anyone with some familiarity with abstract mathematics or theoretical computer science and an itching to learn about homotopy type theory. Our goal is to make homotopy type theory accessible to, and inclusive of, everyone who is interested, regardless of cultural background, age, ability, formal education, ethnicity, gender identity, or expression. We believe HoTT is for everyone, and are committed to fostering a kind, inclusive environment.</span></p>
+
+    <p>This school is for everyone and anyone with some familiarity with abstract mathematics or
+    theoretical computer science and an itching to learn about homotopy type theory. Our goal is to
+    make homotopy type theory accessible to, and inclusive of, everyone who is interested,
+    regardless of cultural background, age, ability, formal education, ethnicity, gender identity,
+    or expression. We believe HoTT is for everyone, and are committed to fostering a kind, inclusive
+    environment.</p>
+
     <p>Attendance is free of charge.</p>
+
     <h2>Schedule</h2>
-    <p>The lectures take place MWF 2:30-4 PM UTC, starting July 4 and ending August 19. There are two parallel tracks: Homotopy Type Theory (HoTT) and Formalization in Agda (Agda).</p>
-    <table height="282" width="757">
+
+    <p>The lectures take place MWF 2:30-4 PM UTC, starting July 4 and ending August 19. There are
+    two parallel tracks: Homotopy Type Theory (HoTT) and Formalization in Agda (Agda).</p>
+
+    <table id="schedule">
     <tbody>
     <tr>
-    <td style="width: 244.977px; text-align: center;">
+    <td>
     <p>July 4</p>
     <p><strong>Paige North</strong></p>
     <p>HoTT</p>
     </td>
-    <td style="width: 244.977px; text-align: center;">
+    <td>
     <p>July 6</p>
     <p><strong>Mart&#237;n H&#246;tzel Escard&#243;</strong></p>
     <p>Agda</p>
     </td>
-    <td style="width: 245.047px; text-align: center;">
+    <td>
     <p>July 8</p>
     <p><strong>Paige North</strong></p>
     <p>HoTT</p>
     </td>
     </tr>
     <tr>
-    <td style="width: 244.977px; text-align: center;">
+    <td>
     <p>July 11</p>
     <p><strong>Paige North</strong></p>
     <p>HoTT</p>
     </td>
-    <td style="width: 244.977px; text-align: center;">
+    <td>
     <p>July 13</p>
     <p><strong>Mart&#237;n H&#246;tzel Escard&#243;</strong></p>
     <p>Agda</p>
     </td>
-    <td style="width: 245.047px; text-align: center;">
+    <td>
     <p>July 15</p>
     <p><strong>Ulrik Buchholtz</strong></p>
     <p>HoTT</p>
     </td>
     </tr>
     <tr>
-    <td style="width: 244.977px; text-align: center;">
+    <td>
     <p>July 18</p>
     <p><strong>Mart&#237;n H&#246;tzel Escard&#243;</strong></p>
     <p>Agda</p>
     </td>
-    <td style="width: 244.977px; text-align: center;">
+    <td>
     <p>July 20</p>
     <p><strong>Ulrik Buchholtz</strong></p>
     <p>HoTT</p>
     </td>
-    <td style="width: 245.047px; text-align: center;">
+    <td>
     <p>July 22</p>
     <p><strong>Dan Licata</strong></p>
     <p>Agda</p>
     </td>
     </tr>
     <tr>
-    <td style="width: 244.977px; text-align: center;">
+    <td>
     <p>July 25</p>
     <p><strong>Ulrik Buchholtz</strong></p>
     <p>HoTT</p>
     </td>
-    <td style="width: 244.977px; text-align: center;">
+    <td>
     <p>July 27</p>
     <p><strong>Dan Licata</strong></p>
     <p>Agda</p>
     </td>
-    <td style="width: 245.047px; text-align: center;">
+    <td>
     <p>July 29</p>
     <p><strong>Emily Riehl</strong></p>
     <p>HoTT</p>
     </td>
     </tr>
     <tr>
-    <td style="width: 244.977px; text-align: center;">
+    <td>
     <p>August 1</p>
     <p><strong>Emily Riehl</strong></p>
     <p>HoTT</p>
     </td>
-    <td style="width: 244.977px; text-align: center;">
+    <td>
     <p>August 3</p>
     <p><strong>Dan Licata</strong></p>
     <p>Agda</p>
     </td>
-    <td style="width: 245.047px; text-align: center;">
+    <td>
     <p>August 5</p>
     <p><strong>Emily Riehl</strong></p>
     <p>HoTT</p>
     </td>
     </tr>
     <tr>
-    <td style="width: 244.977px; text-align: center;">
+    <td>
     <p>August 8</p>
     <p><strong>Anders M&#246;rtberg</strong></p>
     <p>Agda</p>
     </td>
-    <td style="width: 244.977px; text-align: center;">
+    <td>
     <p>August 10</p>
     <p><strong>Egbert Rijke</strong></p>
     <p>HoTT</p>
     </td>
-    <td style="width: 245.047px; text-align: center;">
+    <td>
     <p>August 12</p>
     <p><strong>Anders M&#246;rtberg</strong></p>
     <p>Agda</p>
     </td>
     </tr>
     <tr>
-    <td style="width: 244.977px; text-align: center;">
+    <td>
     <p>August 15</p>
     <p><strong>Egbert Rijke</strong></p>
     <p>HoTT</p>
     </td>
-    <td style="width: 244.977px; text-align: center;">
+    <td>
     <p>August 17</p>
     <p><strong>Anders M&#246;rtberg</strong></p>
     <p>Agda</p>
     </td>
-    <td style="width: 245.047px; text-align: center;">
+    <td>
     <p>August 19</p>
     <p><strong>Egbert Rijke</strong></p>
     <p>HoTT</p>
@@ -151,17 +189,83 @@
     </tr>
     </tbody>
     </table>
+
     <p>The end-of-summer colloquia follow the same schedule on the following dates:</p>
-    <ul class="squarelist">
-    <li>August 22:<strong> Jon Sterling</strong>,&#160;<span><em>How to code your own type theory</em><br/>There is a considerable distance between the formal rules of type theory and the code that you must write in order to animate them as a running program. In this colloquium, you will learn the basic techniques of type theoretic implementation in the OCaml programming language, including the representation of syntax as well as type-directed conversion.<br/><br/></span></li>
-    <li>August 24:<strong> Pierre Cagne</strong>,&#160;<em>Group theory without groups<br/></em><span>During the summer school, two key aspects of HoTT (and their cubical derivatives) have been put on display: identity types and univalent universes. In this colloquium, we will take advantage of both these features of HoTT to introduce what I like to call synthetic symmetry theory, which is essentially a univalent type-theoretic take on group theory. The usual presentation of groups as sets structured by multiplication, inverse and neutral operations is cast aside to the benefit of what are, in my opinion, the intended stars of the show: the mathematical objects on which groups act. This is a shift in perspective, that many group theorists probably implement at an informal level of reasoning, which is here taken seriously at a formal level.</span><br/><span>I will introduce basic notions of group theory through this lens. People in the audience with no background whatsoever in classical group theory are invited to consider this as an introduction to a new fun area of mathematics, while those knowlegdeable about group theory in its classical form are welcome to contrast what will be presented here with the classical theory. At the end of the colloquium, both the former and the latter should be able, and hopefully enticed, to read further about the subject in the work-in-progress book Symmetry (</span><a href="https://unimath.github.io/SymmetryBook/book.pdf">https://unimath.github.io/SymmetryBook/book.pdf</a><span>).<br/><br/></span></li>
-    <li>August 26:<strong> Jonas Frey</strong>,&#160;<em>Modalities and Cohesive HoTT</em><br/>Motivated by the example of truncation levels, this talk will start out by systematically introducing and discussing the notion of <em>modality</em> in HoTT, mostly following [1]. In particular we will see characterizations of modalities and ways to construct them. The second part of the talk will give a brief introduction to the ideas of <em>cohesive</em> homotopy type theory, which is an extension of homotopy type theory in which modalities play a central role [2]. <br/>[1] Egbert Rijke, Michael Shulman, Bas Spitters. <em>Modalities in homotopy type theory.</em> Logical Methods in Computer Science 16 (2020). <br/>[2] Michael Shulman, <em>Brouwer's fixed-point theorem in real-cohesive homotopy type theory.</em> Mathematical Structures in Computer Science 28.6 (2018): 856-941.<br/><br/></li>
-    <li>August 29:<strong> Favonia</strong>, <em>Cartesian cubical type theory</em><br/>We have multiple variants of cubical type theory different from what we have seen in Cubical Agda. In the colloquium, I will introduce another main variant---Cartesian cubical type theory.<br/><br/></li>
-    <li>August 31:<strong> Chaitanya Leena Subramaniam</strong>, <em>Semantics of HoTT</em><br/><span>The goal of this talk is to explain the homotopical semantics of HoTT, i.e. why the constructions of HoTT are meaningful in ordinary homotopy theory. We will see how the categorical semantics of dependent types and identity types allows them to be interpreted as, respectively, fibrations and path objects of a model category, following [1].&#160;</span><span>Following [2], this can be extended to an interpretation of univalence&#160;</span><span>in the model category of simplicial sets. The model category of&#160;</span><span>simplicial sets presents the Grothendieck (&#8734;,1)-topos of &#8734;-groupoids,&#160;</span><span>and we will see that every Grothendieck (&#8734;,1)-topos has a canonical&#160;</span><span>model of univalence, following [3].</span><br/><span>[1] Homotopy theoretic models of identity types. S. Awodey and M. Warren</span><br/><span>[2] The simplicial model of univalent foundations (after Voevodsky). K.&#160;</span><span>Kapulkin and P. LeFanu Lumsdaine</span><br/><span>[3] All (&#8734;,1)-toposes have strict univalent universes. M. Shulman</span></li>
+
+    <ul>
+    <li>August 22: <strong>Jon Sterling</strong>, <em>How to code your own type theory</em>
+
+    <p>There is a considerable distance between the formal rules of type theory and the code that
+    you must write in order to animate them as a running program. In this colloquium, you will learn
+    the basic techniques of type theoretic implementation in the OCaml programming language,
+    including the representation of syntax as well as type-directed conversion.</p>
+    </li>
+
+    <li>August 24: <strong>Pierre Cagne</strong>, <em>Group theory without groups</em>
+
+    <p>During the summer school, two key aspects of HoTT (and their cubical derivatives) have been
+    put on display: identity types and univalent universes. In this colloquium, we will take
+    advantage of both these features of HoTT to introduce what I like to call synthetic symmetry
+    theory, which is essentially a univalent type-theoretic take on group theory. The usual
+    presentation of groups as sets structured by multiplication, inverse and neutral operations is
+    cast aside to the benefit of what are, in my opinion, the intended stars of the show: the
+    mathematical objects on which groups act. This is a shift in perspective, that many group
+    theorists probably implement at an informal level of reasoning, which is here taken seriously at
+    a formal level.</p>
+
+    <p>I will introduce basic notions of group theory through this lens. People in the audience with
+    no background whatsoever in classical group theory are invited to consider this as an
+    introduction to a new fun area of mathematics, while those knowlegdeable about group theory in
+    its classical form are welcome to contrast what will be presented here with the
+    classical theory. At the end of the colloquium, both the former and the latter should be able,
+    and hopefully enticed, to read further about the subject in the work-in-progress book Symmetry
+    (<a href="https://unimath.github.io/SymmetryBook/book.pdf">https://unimath.github.io/SymmetryBook/book.pdf</a>).</p>
+    </li>
+
+    <li>August 26: <strong>Jonas Frey</strong>, <em>Modalities and Cohesive HoTT</em>
+
+    <p>Motivated by the example of truncation levels, this talk will start out by systematically
+    introducing and discussing the notion of <em>modality</em> in HoTT, mostly following [1]. In
+    particular we will see characterizations of modalities and ways to construct them. The second
+    part of the talk will give a brief introduction to the ideas of <em>cohesive</em> homotopy type
+    theory, which is an extension of homotopy type theory in which modalities play a central role
+    [2].</p>
+
+    <p>[1] Egbert Rijke, Michael Shulman, Bas Spitters. <em>Modalities in homotopy type
+    theory.</em> Logical Methods in Computer Science 16 (2020).<br>
+    [2] Michael Shulman, <em>Brouwer's fixed-point theorem in real-cohesive homotopy type
+    theory.</em> Mathematical Structures in Computer Science 28.6 (2018): 856-941.</p>
+    </li>
+
+    <li>August 29: <strong>Favonia</strong>, <em>Cartesian cubical type theory</em>
+
+    <p>We have multiple variants of cubical type theory different from what we have seen in Cubical
+    Agda. In the colloquium, I will introduce another main variant---Cartesian cubical type
+    theory.</p>
+    </li>
+
+    <li>August 31: <strong>Chaitanya Leena Subramaniam</strong>, <em>Semantics of HoTT</em>
+
+    <p>The goal of this talk is to explain the homotopical semantics of HoTT, i.e. why the
+    constructions of HoTT are meaningful in ordinary homotopy theory. We will see how the
+    categorical semantics of dependent types and identity types allows them to be interpreted as,
+    respectively, fibrations and path objects of a model category, following
+    [1]. Following [2], this can be extended to an interpretation of univalence in the model
+    category of simplicial sets. The model category of simplicial sets presents the Grothendieck
+    (&#8734;,1)-topos of &#8734;-groupoids, and we will see that every Grothendieck
+    (&#8734;,1)-topos has a canonical model of univalence, following [3].</p>
+
+    <p>[1] Homotopy theoretic models of identity types. S. Awodey and M. Warren<br>
+    [2] The simplicial model of univalent foundations (after Voevodsky).
+    K. Kapulkin and P. LeFanu Lumsdaine<br>
+    [3] All (&#8734;,1)-toposes have strict univalent universes. M. Shulman</p>
+    </li>
     </ul>
+
     <h2>Staff</h2>
-    <h2>Instructors</h2>
-    <ul class="squarelist">
+
+    <h3>Instructors</h3>
+    <ul>
     <li>Ulrik Buchholtz</li>
     <li>Mart&#237;n H&#246;tzel Escard&#243;</li>
     <li>Dan Licata</li>
@@ -170,40 +274,44 @@
     <li>Emily Riehl</li>
     <li>Egbert Rijke</li>
     </ul>
-    <h2>Colloquium speakers</h2>
-    <ul class="squarelist">
+
+    <h3>Colloquium speakers</h3>
+    <ul>
     <li>Pierre Cagne</li>
     <li>Favonia</li>
     <li>Jonas Frey</li>
     <li>Jon Sterling</li>
     <li>Chaitanya Leena Subramaniam</li>
     </ul>
-    <h2>Teaching assistants</h2>
-    <ul class="squarelist">
-    <li><span>Elisabeth Bonnevier</span></li>
-    <li><span>Tom de Jong</span></li>
-    <li><span>Jarl G. Taxer&#229;s Flaten</span></li>
-    <li><span>Chris Grossack</span></li>
-    <li><span>Artem Gureev</span></li>
-    <li><span>Perry Hart</span></li>
-    <li><span>Astra Kolomatskaia</span></li>
-    <li><span>Am&#233;lia Liao</span></li>
-    <li><span>Axel Ljungstr&#246;m</span></li>
-    <li><span>Matheus Magalh&#227;es de Alcantara</span></li>
-    <li><span>Jacob Neumann</span></li>
-    <li><span>Johannes Schipp von Branitz</span></li>
-    <li><span>Christopher Stough-Brown</span></li>
-    <li><span>Max Zeuner</span></li>
+
+    <h3>Teaching assistants</h3>
+    <ul>
+    <li>Elisabeth Bonnevier</li>
+    <li>Tom de Jong</li>
+    <li>Jarl G. Taxer&#229;s Flaten</li>
+    <li>Chris Grossack</li>
+    <li>Artem Gureev</li>
+    <li>Perry Hart</li>
+    <li>Astra Kolomatskaia</li>
+    <li>Am&#233;lia Liao</li>
+    <li>Axel Ljungstr&#246;m</li>
+    <li>Matheus Magalh&#227;es de Alcantara</li>
+    <li>Jacob Neumann</li>
+    <li>Johannes Schipp von Branitz</li>
+    <li>Christopher Stough-Brown</li>
+    <li>Max Zeuner</li>
     </ul>
-    <h2><span>Organizers</span></h2>
-    <ul class="squarelist">
-    <li><span>Carlo Angiuli</span></li>
-    <li><span>Dan Christensen</span></li>
+
+    <h3>Organizers</h3>
+    <ul>
+    <li>Carlo Angiuli</li>
+    <li>Dan Christensen</li>
     <li>Mart&#237;n H&#246;tzel Escard&#243;</li>
     <li>Chris Kapulkin</li>
     <li>Dan Licata</li>
-    <li>Emily Riehl<br/><span></span></li>
+    <li>Emily Riehl</li>
     <li>Egbert Rijke</li>
     </ul>
+  </div>
   </body>
 </html>
