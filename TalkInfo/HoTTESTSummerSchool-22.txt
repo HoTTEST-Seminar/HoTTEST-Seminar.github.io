@@ -5,4 +5,4 @@ School:
 Title: HoTTEST Summer School 2022
 YouTube: 
 Slides: 
-Abstract: See our <a href="HoTTESTSummerSchool.html">HoTTEST Summer School 2022</a>.
+Abstract: See <a href="HoTTESTSummerSchool.html">HoTTEST Summer School 2022</a>.
