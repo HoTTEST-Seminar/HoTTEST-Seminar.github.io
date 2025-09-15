@@ -11,8 +11,10 @@ Abstract: ABSTRACT CONTENT<br>
 ABSTRACT CONTENT<br>
 ...<br>
 
+New talk files should be added to the TalkInfo folder.
+The termGenerator.py script can help with this.  See that file for instructions.
 
-(new talk files should be added to the TalkInfo folder)<br>
+<p>
 NOTES:
 <ul>
   <li>TERM should be either "Spring" or "Fall" for regular sessions, special terms can be added (such as the Jr. Researcher Event), but a corresponding entry must be added to termIDDict in indexGenerator.py for sorting purposes.</li>
