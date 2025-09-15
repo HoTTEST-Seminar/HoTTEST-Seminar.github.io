@@ -73,6 +73,8 @@ def readFile(fileName):
                 pass
             else:
                 raise Exception(fileName + ': Improperly formatted label in line ' + str(lineNumber) + ' - "' + line + '"')
+        if newTalk.title == '':
+            newTalk.title = 'TBA'
         return newTalk
 
 # Function for testing if a talk object is missing any critical components
