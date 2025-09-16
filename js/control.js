@@ -1,9 +1,3 @@
-// Places 'Past Talks' header after first accordion menu
-const pastTalks = document.createElement('h2');
-pastTalks.textContent = 'Past Talks';
-document.querySelector('.panel').insertAdjacentElement('afterend', pastTalks);
-
-
 // Accordion animation
 var acc = document.getElementsByClassName('accordion');
 var i;

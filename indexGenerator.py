@@ -21,16 +21,7 @@ class Talk:
         self.slides = slides
         self.abstract = abstract
 
-# Function for formatting text with urls for html output (UNUSED)
-def formatURLs(str):
-    newStr = str
-    # Probably far to complex regex for finding urls
-    urls = re.findall(r"""((?:(?:https|http)?:(?:/{1,3}|[a-z0-9%])|[a-z0-9.\-]+[.](?:com|org)/)(?:[^\s()<>{}\[\]]+|\([^\s()]*?\([^\s()]+\)[^\s()]*?\)|\([^\s]+?\))+(?:\([^\s()]*?\([^\s()]+\)[^\s()]*?\)|\([^\s]+?\)|[^\s`!()\[\]{};:'".,<>?«»“”‘’])|(?:(?<!@)[a-z0-9]+(?:[.\-][a-z0-9]+)*[.](?:com|ac)\b/?(?!@)))""", str)
-    for url in urls:
-        newStr = newStr.replace(url, '<a href="' + url + '">' + url + "</a>")
-    return newStr
-
-# Given file name in the folder "TalkInfo", parses file into a Talk objects
+# Given file name in the folder "TalkInfo", parses file into a Talk object
 def readFile(fileName):
     newTalk = Talk('', '', '', '', '', '', [], '')
     with open('./TalkInfo/' + fileName, encoding='utf8') as f:
@@ -86,7 +77,7 @@ def readFile(fileName):
         return newTalk
 
 # Function for testing if a talk object is missing any critical components
-def testTalk(talk):
+def validateTalk(talk):
     if talk.date.strip() == '':
         raise Exception('Talk missing date entry')
     elif talk.term.strip() == '':
@@ -104,24 +95,17 @@ def isFuture(talk):
     talkDate = (talk.termID[0], talk.dateID[0], talk.dateID[1])
     return today < talkDate
 
-# Putting all talks into an array
-talks = []
+# Parse and organize talks
+pastTalks = {}
+futureTalks = {}
 for file in os.listdir('./TalkInfo'):
     if not (file.startswith('.') or file.endswith('~')): # Ignore files with unusual names (system generated, etc.)
-        newTalk = readFile(file)
-        testTalk(newTalk)
-        talks.append(newTalk)
-
-# Labeling talks with their term and date
-pageInfo = {}
-for talk in talks:
-    if talk.termID not in pageInfo:
-        pageInfo[talk.termID] = { talk.dateID : [talk] }
-    else:
-        if talk.dateID not in pageInfo[talk.termID]:
-            pageInfo[talk.termID][talk.dateID] = [talk]
+        thisTalk = readFile(file)
+        validateTalk(thisTalk)
+        if isFuture(thisTalk):
+            futureTalks.setdefault(thisTalk.termID, {}).setdefault(thisTalk.dateID, []).append(thisTalk)
         else:
-            pageInfo[talk.termID][talk.dateID].append(talk)
+            pastTalks.setdefault(thisTalk.termID, {}).setdefault(thisTalk.dateID, []).append(thisTalk)
 
 # Start creating HTML document
 doc, tag, text, line = Doc().ttl()
@@ -179,42 +163,47 @@ docHead = """
 # Adding the static top of the page to doc (Title to "Expand All" button) (probably a better way to do this)
 doc.asis(docHead)
 
-# Loop through pageInfo to generate relevant HTML (sorting in reverse order by term)
-termIDs = list(pageInfo.keys())
-termIDs.sort(reverse=True)
-for termID in termIDs:
-    currentTerm = pageInfo[termID] # Dictionary of the current term
-    dateIDs = list(currentTerm.keys())
-    dateIDs.sort(reverse=True)
-    with tag('button', klass='accordion'):
-        text(currentTerm[dateIDs[0]][0].term)
-    with tag('div', klass='panel'):
-        with tag('table'):
-            with tag('tr'):
-                line('th', 'Date')
-                line('th', 'Speaker')
-                line('th', 'Talk Information')
-            for dateID in dateIDs: # Looping through all talks in the current term and creating entries for them
-                currentTerm[dateID].sort(key=lambda talk: talk.title)
-                for talk in currentTerm[dateID]: # Looping through all talks on a single day
-                    with tag('tr'):
-                        line('td', talk.date, klass='date')
-                        with tag('td', klass='speaker'):
-                            text(talk.speaker)
-                            if talk.school != '':
-                                line('div', talk.school, klass='school')
-                        with tag('td'):
-                            with tag('p', klass='talk-title'):
-                                text(talk.title, ' ')
-                                with tag('span', klass='icons'):
-                                    if talk.ytlink != '':
-                                        with tag('a', href=talk.ytlink):
-                                            doc.stag('img', src='images/youtube.webp', width='20', alt='YouTube video')
-                                    for slide in talk.slides:
-                                        with tag('a', href='hottestfiles/' + slide):
-                                            doc.stag('img', src='images/pdf.png', width='20', alt='Slides')
-                            with tag('div', klass='abstract'):
-                                doc.asis(talk.abstract)
+# Loop through talk dictionary to generate relevant HTML (sorting in reverse order by term)
+def printTalks(pageInfo,shouldReverse):
+    termIDs = list(pageInfo.keys())
+    termIDs.sort(reverse=shouldReverse)
+    for termID in termIDs:
+        currentTerm = pageInfo[termID] # Dictionary of the current term
+        dateIDs = list(currentTerm.keys())
+        dateIDs.sort(reverse=shouldReverse)
+        with tag('button', klass='accordion'):
+            text(currentTerm[dateIDs[0]][0].term)
+        with tag('div', klass='panel'):
+            with tag('table'):
+                with tag('tr'):
+                    line('th', 'Date')
+                    line('th', 'Speaker')
+                    line('th', 'Talk Information')
+                for dateID in dateIDs: # Looping through all talks in the current term and creating entries for them
+                    currentTerm[dateID].sort(key=lambda talk: talk.title)
+                    for talk in currentTerm[dateID]: # Looping through all talks on a single day
+                        with tag('tr'):
+                            line('td', talk.date, klass='date')
+                            with tag('td', klass='speaker'):
+                                text(talk.speaker)
+                                if talk.school != '':
+                                    line('div', talk.school, klass='school')
+                            with tag('td'):
+                                with tag('p', klass='talk-title'):
+                                    text(talk.title, ' ')
+                                    with tag('span', klass='icons'):
+                                        if talk.ytlink != '':
+                                            with tag('a', href=talk.ytlink):
+                                                doc.stag('img', src='images/youtube.webp', width='20', alt='YouTube video')
+                                        for slide in talk.slides:
+                                            with tag('a', href='hottestfiles/' + slide):
+                                                doc.stag('img', src='images/pdf.png', width='20', alt='Slides')
+                                with tag('div', klass='abstract'):
+                                    doc.asis(talk.abstract)
+
+printTalks(futureTalks, False)
+doc.asis("<h2>Past Talks</h2>")
+printTalks(pastTalks, True)
 
 docFoot = """
 <script src="js/control.js"></script>
