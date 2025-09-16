@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 
 from yattag import Doc, indent
+from datetime import date
 import os, re
 
 # Any new term types must be added to this dictionary for sorting
 termIDDict = { 'Spring': 'b', 'Fall': 'd', 'HoTTEST Event For Junior Researchers': 'a', 'HoTTEST Conference' : 'c', 'HoTTEST Summer School' : 'c'}
-monthDict = { 'Jan': '1', 'Feb': '2', 'Mar': '3', 'Apr': '4', 'May': '5', 'Jun': '6', 'Jul': '7', 'Aug': '8', 'Sep': '9', 'Oct': 'a', 'Nov': 'b', 'Dec': 'c' }
+monthDict = { 'Jan': 1, 'Feb': 2, 'Mar': 3, 'Apr': 4, 'May': 5, 'Jun': 6, 'Jul': 7, 'Aug': 8, 'Sep': 9, 'Oct': 10, 'Nov': 11, 'Dec': 12 }
 
 class Talk:
     def __init__(self, term, date, speaker, school, title, ytlink, slides, abstract):
@@ -34,12 +35,12 @@ def readFile(fileName):
     newTalk = Talk('', '', '', '', '', '', [], '')
     with open('./TalkInfo/' + fileName, encoding='utf8') as f:
         lines = f.readlines()
-        f.close()
-        lines = [x for x in lines if x.strip()] # Remove blank lines from files
         inAbstract = False
         lineNumber = 0
         for line in lines:
             line = line.strip()
+            if not line: # skip whitespace-only lines
+                continue
             lineNumber += 1
             if line.lower().startswith('abstract:') or inAbstract:
                 if not inAbstract:
@@ -50,13 +51,22 @@ def readFile(fileName):
             elif line.lower().startswith('term:'):
                 newTalk.term = line[5:].strip()
                 if newTalk.term[:-5] in termIDDict:
-                    newTalk.termID = newTalk.term[-2:] + termIDDict[newTalk.term[:-5]]
+                    try:
+                        yearNum = int(newTalk.term[-4:])
+                    except ValueError:
+                        raise Exception(fileName + ': Term does not end in four-digit year')
+                    newTalk.termID = (yearNum, termIDDict[newTalk.term[:-5]])
                 else:
                     raise Exception(fileName + ': Term type not found - new term types must be added to termIDDict for sorting')
             elif line.lower().startswith('date:'):
                 newTalk.date = line[5:].strip()
                 if newTalk.date[:3] in monthDict:
-                    newTalk.dateID = monthDict[newTalk.date[:3]] + newTalk.date[-2:]
+                    monthNum = monthDict[newTalk.date[:3]]
+                    try:
+                        dayNum = int(newTalk.date[-2:])
+                    except ValueError:
+                        dayNum = 0
+                    newTalk.dateID = (monthNum, dayNum)
                 else:
                     raise Exception(fileName + ': Date entry ill-formed')
             elif line.lower().startswith('speaker:'):
@@ -69,8 +79,6 @@ def readFile(fileName):
                 newTalk.ytlink = line[8:].strip()
             elif line.lower().startswith('slides:'):
                 newTalk.slides = line[7:].strip().split()
-            elif line == '':
-                pass
             else:
                 raise Exception(fileName + ': Improperly formatted label in line ' + str(lineNumber) + ' - "' + line + '"')
         if newTalk.title == '':
@@ -89,6 +97,12 @@ def testTalk(talk):
         raise Exception('Talk "' + talk.speaker + '-' + talk.date + '" missing talk title')
     elif talk.abstract.strip() == '':
         raise Exception('Talk "' + talk.speaker + '-' + talk.date + '" missing abstract')
+
+# Check whether the talk is in the future
+def isFuture(talk):
+    today = (date.today().year, date.today().month, date.today().day)
+    talkDate = (talk.termID[0], talk.dateID[0], talk.dateID[1])
+    return today < talkDate
 
 # Putting all talks into an array
 talks = []

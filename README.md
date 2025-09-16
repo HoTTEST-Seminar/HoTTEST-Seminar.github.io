@@ -18,7 +18,7 @@ The termGenerator.py script can help with this.  See that file for instructions.
 NOTES:
 <ul>
   <li>TERM should be either "Spring" or "Fall" for regular sessions, special terms can be added (such as the Jr. Researcher Event), but a corresponding entry must be added to termIDDict in indexGenerator.py for sorting purposes.</li>
-  <li>YYYY is the year, although only the last two digits are used for sorting.</li>
+  <li>YYYY is the year.</li>
   <li>MON should be the shortened form of the month (Jan, Sept, etc. this is just for consistency purposes, as long as MON starts with the correct three letters it will be sorted correctly).</li>
   <li>DD is the day, if it is a single digit, make sure there is a space between MON and DD.</li>
   <li>SPEAKER is the name of the speaker</li>
