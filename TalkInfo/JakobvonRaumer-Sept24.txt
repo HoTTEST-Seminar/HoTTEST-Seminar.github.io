@@ -1,5 +1,5 @@
 Term: Fall 2020
-Date: Sept 24
+Date: Sep 24
 Speaker: Jakob von Raumer
 School: University of Nottingham
 Title: Coherence via Well-Foundedness

@@ -1,5 +1,5 @@
 Term: Spring 2018
-Date: May 10	
+Date: May 10
 Speaker: Thorsten Altenkirch
 School: University of Nottingham
 Title: Towards higher models and syntax of type theory

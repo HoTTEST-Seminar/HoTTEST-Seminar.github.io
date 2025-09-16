@@ -1,5 +1,5 @@
 Term: Spring 2019
-Date: Feb 7	
+Date: Feb 7
 Speaker: Nima Rasekh
 School: MPI Bonn 
 Title: Algebraic Topology in an Elementary Higher Topos

@@ -1,5 +1,5 @@
 Term: Spring 2018
-Date: Mar 29	
+Date: Mar 29
 Speaker: Ulrik Buchholtz
 School: Technische Universität Darmstadt
 Title: From Higher Groups to Homotopy Surfaces

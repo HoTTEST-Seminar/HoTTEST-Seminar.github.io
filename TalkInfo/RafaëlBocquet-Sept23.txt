@@ -1,5 +1,5 @@
 Term: Fall 2021
-Date: Sept 23	
+Date: Sep 23
 Speaker: Rafaël Bocquet
 School: Eötvös Loránd University
 Title: Coherence of definitional equality in type theory

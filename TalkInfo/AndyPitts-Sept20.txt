@@ -1,5 +1,5 @@
 Term: Fall 2018
-Date: Sept 20
+Date: Sep 20
 Speaker: Andy Pitts
 School: University of Cambridge
 Title: Axiomatizing Cubical Sets Models of Univalent Foundations

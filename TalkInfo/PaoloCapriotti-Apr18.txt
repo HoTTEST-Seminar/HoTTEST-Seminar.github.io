@@ -1,5 +1,5 @@
 Term: Spring 2019
-Date: Apr 18	
+Date: Apr 18
 Speaker: Paolo Capriotti
 School: Technische Universität Darmstadt
 Title: Polynomial monads as opetopic types

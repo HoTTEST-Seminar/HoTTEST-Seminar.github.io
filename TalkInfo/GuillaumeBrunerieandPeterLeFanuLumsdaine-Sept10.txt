@@ -1,5 +1,5 @@
 Term: Fall 2020
-Date: Sept 10
+Date: Sep 10
 Speaker: Guillaume Brunerie and Peter LeFanu Lumsdaine
 School: Stockholm University
 Title: Initiality for Martin-Löf type theory

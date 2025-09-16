@@ -1,5 +1,5 @@
 Term: Fall 2024
-Date: Sept 26
+Date: Sep 26
 Speaker: Reid Barton
 School: 
 Title: Directed aspects of condensed type theory

@@ -1,5 +1,5 @@
 Term: Spring 2018
-Date: May 24	
+Date: May 24
 Speaker: Thierry Coquand
 School: University of Gothenburg
 Title: A survey of constructive models of univalence

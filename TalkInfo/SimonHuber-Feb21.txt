@@ -1,5 +1,5 @@
 Term: Spring 2019
-Date: Feb 21	
+Date: Feb 21
 Speaker: Simon Huber
 School: University of Gothenburg
 Title: Homotopy canonicity for cubical type theory

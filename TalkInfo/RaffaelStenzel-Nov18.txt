@@ -1,5 +1,5 @@
 Term: Fall 2021
-Date: Nov 18	
+Date: Nov 18
 Speaker: Raffael Stenzel
 School: Masaryk University 
 Title: Higher sites and their higher categorical logic

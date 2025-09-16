@@ -1,5 +1,5 @@
 Term: Spring 2019
-Date: Jan 31	
+Date: Jan 31
 Speaker: Nicola Gambino
 School: University of Leeds
 Title: From algebraic weak factorisation systems to models of type theory

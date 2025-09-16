@@ -1,5 +1,5 @@
 Term: Spring 2018
-Date: Apr 12	
+Date: Apr 12
 Speaker: Michael Shulman
 School: University of San Diego
 Title: Type 2-theories

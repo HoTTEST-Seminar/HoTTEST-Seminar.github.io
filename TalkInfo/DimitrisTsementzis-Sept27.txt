@@ -1,5 +1,5 @@
 Term: Fall 2018
-Date: Sept 27
+Date: Sep 27
 Speaker: Dimitris Tsementzis
 School: Rutgers University
 Title: First-Order Logic with Isomorphism
