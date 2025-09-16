@@ -163,25 +163,22 @@ docHead = """
 # Adding the static top of the page to doc (Title to "Expand All" button) (probably a better way to do this)
 doc.asis(docHead)
 
-# Loop through talk dictionary to generate relevant HTML (sorting in reverse order by term)
-def printTalks(pageInfo,shouldReverse):
-    termIDs = list(pageInfo.keys())
-    termIDs.sort(reverse=shouldReverse)
-    for termID in termIDs:
-        currentTerm = pageInfo[termID] # Dictionary of the current term
-        dateIDs = list(currentTerm.keys())
-        dateIDs.sort(reverse=shouldReverse)
+# Loop through given talk dictionary to generate HTML
+def printTalks(talkDict, reverseChronological=False):
+    for termID in sorted(talkDict, reverse=reverseChronological):
+        thisTerm = talkDict[termID] # Dictionary of the current term
         with tag('button', klass='accordion'):
-            text(currentTerm[dateIDs[0]][0].term)
+            text(next(iter(thisTerm.values()))[0].term)
         with tag('div', klass='panel'):
             with tag('table'):
                 with tag('tr'):
                     line('th', 'Date')
                     line('th', 'Speaker')
                     line('th', 'Talk Information')
-                for dateID in dateIDs: # Looping through all talks in the current term and creating entries for them
-                    currentTerm[dateID].sort(key=lambda talk: talk.title)
-                    for talk in currentTerm[dateID]: # Looping through all talks on a single day
+                # Every date in this term
+                for dateID in sorted(thisTerm, reverse=reverseChronological):
+                    # Every talk on this date
+                    for talk in sorted(thisTerm[dateID], key=lambda talk: talk.title):
                         with tag('tr'):
                             line('td', talk.date, klass='date')
                             with tag('td', klass='speaker'):
@@ -201,7 +198,7 @@ def printTalks(pageInfo,shouldReverse):
                                 with tag('div', klass='abstract'):
                                     doc.asis(talk.abstract)
 
-printTalks(futureTalks, False)
+printTalks(futureTalks)
 doc.asis("<h2>Past Talks</h2>")
 printTalks(pastTalks, True)
 
