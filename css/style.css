@@ -92,11 +92,14 @@ td, th {
   text-align: left;
   padding: 8px;
 }
+td {
+  vertical-align: top;
+}
 td:first-child {
-  width: 6%;
+  width: 8%;
 }
 td:nth-child(2) {
-  width: 15%;
+  width: 18%;
 }
 td:last-child .abstract {
   display: block;
