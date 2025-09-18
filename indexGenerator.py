@@ -36,7 +36,13 @@ def readFile(fileName):
             if inAbstract:
                 newTalk.abstract += '<p>' + line +'</p>'
             elif line.lower().startswith('abstract:'):
-                newTalk.abstract = '<p>' + line[9:].strip() + '</p>'
+                rest = line[9:].strip()
+                if rest:
+                    newTalk.abstract = '<p>' + rest + '</p>'
+                else:
+                    # Handle the case where the abstract really starts on the line
+                    # after the "Abstract:" heading.
+                    newTalk.abstract = ''
                 inAbstract = True
             elif line.lower().startswith('term:'):
                 newTalk.term = line[5:].strip()
@@ -85,8 +91,6 @@ def validateTalk(talk):
         raise Exception('Talk on ' + talk.date + ', ' + talk.term + ' missing speaker name')
     elif talk.title.strip() == '':
         raise Exception('Talk "' + talk.speaker + '-' + talk.date + '" missing talk title')
-    elif talk.abstract.strip() == '':
-        raise Exception('Talk "' + talk.speaker + '-' + talk.date + '" missing abstract')
 
 # Check whether the talk is in the future
 def isFuture(talk):
