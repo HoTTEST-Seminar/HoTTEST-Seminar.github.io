@@ -22,8 +22,11 @@ h1, h2, h3 {
   margin: 0 2px 0 2px;
   vertical-align: middle;
 }
-.talk-title, .abstract > p {
+.talk-title {
   margin-top: 0;
+  margin-bottom: 0;
+}
+.abstract > p {
   margin-bottom: 0;
 }
 #title {
@@ -104,7 +107,7 @@ td:nth-child(2) {
 td:last-child .abstract {
   display: block;
   word-break: break-word;
-  white-space: pre-line;
+  margin-top: 8px;
 }
 .talk-title {
   font-weight: bold;
