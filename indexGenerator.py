@@ -33,11 +33,11 @@ def readFile(fileName):
             if not line: # skip whitespace-only lines
                 continue
             lineNumber += 1
-            if line.lower().startswith('abstract:'):
+            if inAbstract:
+                newTalk.abstract += '<p>' + line +'</p>'
+            elif line.lower().startswith('abstract:'):
                 newTalk.abstract = '<p>' + line[9:].strip() + '</p>'
                 inAbstract = True
-            elif inAbstract:
-                newTalk.abstract += '<p>' + line +'</p>'
             elif line.lower().startswith('term:'):
                 newTalk.term = line[5:].strip()
                 if newTalk.term[:-5] in termIDDict:
