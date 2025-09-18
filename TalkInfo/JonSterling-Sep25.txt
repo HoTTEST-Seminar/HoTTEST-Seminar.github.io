@@ -2,7 +2,7 @@ Term: Fall 2025
 Date: Sep 25
 Speaker: Jon Sterling
 School: University of Cambridge
-Title:
+Title: Is it time for a new proof assistant?
 YouTube:
 Slides:
-Abstract:
+Abstract: It could be time to build a <em>non-experimental</em> proof assistant for homotopy type theory and univalent foundations. I’ll give my thoughts on what that would entail, and where we are able to contribute in the era of <em>Pax Leanica</em>, focusing on algebraic hierarchies, carefully designed user experience, and a proposed return to foundational orthodoxy.
