@@ -29,10 +29,10 @@ def readFile(fileName):
         inAbstract = False
         lineNumber = 0
         for line in lines:
+            lineNumber += 1
             line = line.strip()
             if not line: # skip whitespace-only lines
                 continue
-            lineNumber += 1
             if inAbstract:
                 newTalk.abstract += '<p>' + line +'</p>'
             elif line.lower().startswith('abstract:'):
