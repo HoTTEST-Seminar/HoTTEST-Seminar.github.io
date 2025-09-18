@@ -129,7 +129,7 @@ docHead = """
     <img src="images/universal-cover.png" alt="Universal Cover of S^1" style="width: 250px;">
 </div>
 <hr style="border: 1px solid #888ebe;">
-<p style="margin-left: auto; margin-right: auto; text-align: center; max-width: 1000px;">
+<p style="margin-left: auto; margin-right: auto; max-width: 1000px;">
     Homotopy Type Theory Electronic Seminar Talks (HoTTEST) is a series of research talks by leading experts in Homotopy Type Theory.
     The seminar is open to all, although <strong>familiarity with Homotopy Type Theory will be assumed</strong>.
     To attend a talk, please follow the instructions below.</p>
