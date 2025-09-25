@@ -3,6 +3,7 @@ Date: Sep 25
 Speaker: Jon Sterling
 School: University of Cambridge
 Title: Is it time for a new proof assistant?
-YouTube:
+YouTube: https://youtu.be/7oBkEbKJvnE
 Slides: Sterling-2025-09-25-HoTTEST.pdf
 Abstract: It could be time to build a <em>non-experimental</em> proof assistant for homotopy type theory and univalent foundations. I’ll give my thoughts on what that would entail, and where we are able to contribute in the era of <em>Pax Leanica</em>, focusing on algebraic hierarchies, carefully designed user experience, and a proposed return to foundational orthodoxy.
+A message from the speaker: In this talk, I inadvertently referred to Conor McBride with the wrong pronouns. I’m deeply sorry to Conor for this mistake, and also to anyone else who felt alienated as a result. The uploaded slides have been corrected, but the mistake is present in the recording. Sincerely, Jon.
