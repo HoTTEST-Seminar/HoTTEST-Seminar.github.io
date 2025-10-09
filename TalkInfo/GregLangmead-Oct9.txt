@@ -3,7 +3,7 @@ Date: Oct 9
 Speaker: Greg Langmead
 School: Carnegie Mellon University
 Title: Discrete differential geometry in homotopy type theory
-YouTube: https://youtu.be/Vp8N-XQQBWY?si=c0kC_YR1OLjV1dUF
+YouTube: https://youtu.be/Vp8N-XQQBWY
 Slides: Langmead-2025-10-09-HoTTEST.pdf
 Abstract: Type families on higher inductive types such as pushouts can capture homotopical properties of differential geometric constructions including connections, curvature, and vector fields. We define a class of pushouts based on simplicial complexes, then define principal bundles, connections, and curvature on these. We provide an example of a tangent bundle but do not prove when these must exist. We define vector fields, and the index of a vector field. Our main result is a theorem relating total curvature and total index, a key step to proving the Gauss-Bonnet theorem and the Poincaré-Hopf theorem, but without an existing definition of Euler characteristic to compare them to. We draw inspiration in part from the young field of discrete differential geometry, and in part from the original classical proofs, which often make use of triangulations and other discrete arguments.
 
