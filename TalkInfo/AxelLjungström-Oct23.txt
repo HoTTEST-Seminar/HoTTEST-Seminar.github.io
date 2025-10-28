@@ -3,7 +3,7 @@ Date: Oct 23
 Speaker: Axel Ljungström
 School: University of Nottingham
 Title: A formalisation of the Serre finiteness theorem
-YouTube:
+YouTube: https://youtu.be/UNBfyeB9u1s
 Slides: Ljungstrom-2025-10-23-HoTTEST.pdf
 Abstract:
 The central claim of the Serre finiteness theorem is that homotopy groups of spheres are finitely presented. Remarkably, this theorem can be proved constructively in HoTT. A particular consequence of this is that we get a completely synthetic proof of Brown's result that we, at least in theory, can compute (in the computer scientist's sense of the word) any homotopy group of any sphere! The HoTT proof of the Serre finiteness theorem, which is due to Barton and Campion, quickly inspired the launching of a rather extensive formalisation project, with the end-goal of verifying Barton and Campion's proof in Cubical Agda. About a month ago, this formalisation was finally completed.
