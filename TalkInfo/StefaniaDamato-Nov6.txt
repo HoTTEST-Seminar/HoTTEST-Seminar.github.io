@@ -3,6 +3,6 @@ Date: Nov 6
 Speaker: Stefania Damato
 School: University of Nottingham
 Title: The Groupoid CwF of Containers
-YouTube:
+YouTube: https://youtu.be/s1LEIXXm6JM
 Slides:
 Abstract: The original definition of a category with families (CwF) gives rise to some coherence issues when working intensionally. For example, the set model and the presheaf model technically do not fit this definition because their collections of types form groupoids and not h-sets. Altenkirch and Kaposi have previously introduced a CwF of containers which suffers from similar coherence issues in the intensional setting. In this talk, I will present ongoing work on fixing these issues for the container case by defining a groupoid CwF (GCwF) of containers. A GCwF allows us to have types forming groupoids, while requiring us to prove some extra coherences.
