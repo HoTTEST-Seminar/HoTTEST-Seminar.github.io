@@ -2,7 +2,8 @@ Term: Fall 2025
 Date: Dec 4
 Speaker: Matteo Spadetto
 School: Université de Nantes
-Title:
+Title: Different descriptions of the semantics of computation axioms
 YouTube:
 Slides:
 Abstract:
+We discuss three ways of formulating the semantics of type theory (syntactic, (higher) categorical, and homotopy theoretic) and the relationships between them, focusing on concrete examples provided by axiomatic type constructors.
