@@ -15,6 +15,13 @@ New talk files should be added to the TalkInfo folder.
 The termGenerator.py script can help with this.  See that file for instructions.
 
 <p>
+After creating/updating talk files, run <tt>./indexGenerator.py</tt>.
+If you are running this on the day a seminar occurs, if will become a "past" talk.
+If you still want it to be a future talk, you can run:
+<tt>faketime yesterday ./indexGenerator.py</tt>
+(after installing faketime on your system).
+
+<p>
 NOTES:
 <ul>
   <li>TERM should be either "Spring" or "Fall" for regular sessions, special terms can be added (such as the Jr. Researcher Event), but a corresponding entry must be added to termIDDict in indexGenerator.py for sorting purposes.</li>
