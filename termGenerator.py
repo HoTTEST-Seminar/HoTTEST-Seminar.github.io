@@ -30,7 +30,7 @@
 import os
 import sys
 
-def generate_talk_files(term):
+def generate_talk_files(term, force=False):
     term_name = term[:-4] + ' ' + term[-4:]
     input_path = os.path.join("TermInfo", term + '.txt')
 
@@ -70,8 +70,8 @@ def generate_talk_files(term):
         filename = f"{speaker.replace(' ', '')}-{month}{day}.txt"
         filepath = os.path.join("TalkInfo", filename)
 
-        if os.path.exists(filepath):
-            print('File exists and left unchanged:', filepath)
+        if not force and os.path.exists(filepath):
+            print('File exists and left unchanged (use -f to overwrite):', filepath)
             continue
 
         # Write to file
@@ -80,7 +80,9 @@ def generate_talk_files(term):
         print('File written:', filepath)
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: termGenerator.py TermYYYY")
+    if len(sys.argv) == 2 or (len(sys.argv) == 3 and sys.argv[1] == '-f'):
+        force = (len(sys.argv) == 3)
+        generate_talk_files(sys.argv[-1], force=force)
+        print("You probably want to run ./indexGenerator.py now.")
     else:
-        generate_talk_files(sys.argv[1])
+        print("Usage: termGenerator.py [-f] TermYYYY")
