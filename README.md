@@ -13,6 +13,8 @@ ABSTRACT CONTENT<br>
 
 New talk files should be added to the TalkInfo folder.
 The termGenerator.py script can help with this.  See that file for instructions.
+See also calendarGenerator.py for how to create the initial calendar entries
+for a term.
 
 <p>
 After creating/updating talk files, run <tt>./indexGenerator.py</tt>.
