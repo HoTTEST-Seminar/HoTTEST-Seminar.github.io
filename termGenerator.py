@@ -2,7 +2,7 @@
 
 # Given a single argument of the form TermYYYY.txt, it reads the file
 # TermInfo/TermYYYY.txt.  Here YYYY is a four-digit year and Term is
-# usually Fall or Winter.
+# usually Fall or Spring.
 #
 # For each line in that file, it generates a file in the TalkInfo
 # folder.  The lines in the input are of the form
