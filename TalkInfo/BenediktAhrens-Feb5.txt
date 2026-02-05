@@ -2,7 +2,7 @@ Term: Spring 2026
 Date: Feb 5
 Speaker: Benedikt Ahrens
 School: Delft University of Technology
-Title: A Type Theory for Comprehension Categories
+Title: A type theory for comprehension categories
 YouTube: https://youtu.be/dCOZGKbSQSo
 Slides: Ahrens-2026-02-05-HoTTEST.pdf
 Abstract: Recent models of intensional type theory have been constructed in algebraic weak factorization systems (AWFSs). AWFSs give rise to comprehension categories that feature non-trivial morphisms between types; these morphisms are not used in the standard interpretation of Martin-Löf type theory in comprehension categories.
