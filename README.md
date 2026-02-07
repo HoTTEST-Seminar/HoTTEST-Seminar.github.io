@@ -18,7 +18,7 @@ for a term.
 
 <p>
 After creating/updating talk files, run <tt>./indexGenerator.py</tt>.
-If you are running this on the day a seminar occurs, if will become a "past" talk.
+If you are running this on the day a seminar occurs, it will become a "past" talk.
 If you still want it to be a future talk, you can run:
 <tt>faketime yesterday ./indexGenerator.py</tt>
 (after installing faketime on your system).
