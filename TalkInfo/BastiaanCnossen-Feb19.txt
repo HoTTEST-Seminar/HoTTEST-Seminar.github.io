@@ -2,7 +2,9 @@ Term: Spring 2026
 Date: Feb 19
 Speaker: Bastiaan Cnossen
 School: University of Regensburg
-Title:
+Title: Synthetic category theory in CaTT
 YouTube:
 Slides:
-Abstract:
+Abstract: Up to now, most approaches to a synthetic theory of categories are based on Martin-Löf type theory (e.g. directed/simplicial type theory). In this talk, I discuss some first explorations for using the type theory CaTT as a basis for synthetic category theory.
+The type theory CaTT, developed by Finster and Mimram, captures the internal language of a weak ω-category: a categorical structure with n-morphisms for every n with operations satisfying the weakest possible form of coherence laws.  Unlike HoTT, CaTT may be interpreted directly within any (∞,1)-category, without need for intricate strictification results. In particular, CaTT has a model given by the (∞,1)-category Cat of small (∞,1)-categories.
+The long-term goal of our project is to enhance CaTT with additional rules capturing the internal language of Cat. In this talk I will focus on a first step: after explaining the basics of CaTT, I will formulate additional rules in CaTT that force its models to be (∞,1)-categories with products, pullbacks and/or internal homs. I will further explain how we hope to extend this in the future. Everything is joint with Ivan Kobe.
