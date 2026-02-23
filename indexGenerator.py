@@ -147,7 +147,8 @@ docHead = """
     <li><strong>YouTube channel: </strong><a href="https://www.youtube.com/channel/UC-9jDbJ-HegCFuWuam1SfvQ">HoTTEST</a>.</li>
     <li><strong>Organizers: </strong>
         <a href="https://www.carloangiuli.com/">Carlo Angiuli</a>,
-        <a href="https://jdc.math.uwo.ca/">Dan Christensen</a>, and
+        <a href="https://jdc.math.uwo.ca/">Dan Christensen</a>,
+        <a href="https://tdejong.com/">Tom de Jong</a>, and
         <a href="https://emilyriehl.github.io/">Emily Riehl</a>.</li>
     <li><strong>Past Organizer: </strong>
         <a href="https://www.math.uwo.ca/faculty/kapulkin/index.html">Chris Kapulkin</a>
