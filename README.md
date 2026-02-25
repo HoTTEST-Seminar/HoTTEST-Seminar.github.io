@@ -20,15 +20,15 @@ your commit to github, and wait around 30 seconds.
 Then reload the website https://hottest-seminar.github.io/ to check that all is good.
 
 <p>
-If you run <tt>indexGenerator.py</tt> on the day a seminar occurs, it will become a "past" talk.
+Aside: If you run <tt>indexGenerator.py</tt> on the day a seminar occurs, it will become a "past" talk.
 If you still want it to be a future talk, you can run:
 <tt>faketime yesterday ./indexGenerator.py</tt>
 (after installing faketime on your system).
 
 <p>
-Similarly, when you get the pdf file after a talk, you put it in the hottestfiles
+When you get the pdf file after a talk, you put it in the hottestfiles
 folder, following the naming convention there, and update the TalkInfo file to refer to it.
-Then regenerate as described in the previous paragraph, and commit the TalkInfo file,
+Then regenerate as described above, and commit the TalkInfo file,
 the pdf file, and index.html.
 
 <p>
@@ -73,7 +73,7 @@ THINGS THAT WILL AFFECT PAGE GENERATION (indexGenerator.py will throw an excepti
   <li>Improperly formatted term or date entries</li>
   <li>Certain missing entries (e.g. Term, Date, Speaker)</li>
   <li>"Abstract:" not being the last entry (the exception that will show up in this case is for missing entries of whatever was below "Abstract:")</li>
-  <li>&gt; and &lt; symbols in abstract (must be replaced with &amp;gt; and &amp;lt; to not get following error: yattag.indentation.XMLTokenError) </li>
+  <li>&gt; and &lt; symbols in abstract (must be replaced with &amp;gt; and &amp;lt; to not get the following error: yattag.indentation.XMLTokenError) </li>
 </ul>
 
 THINGS THAT WILL _NOT_ AFFECT PAGE GENERATION:
