@@ -1,4 +1,44 @@
-<h2>EXAMPLE OF CORRECT FORMATTING FOR TALK FILES</h2>
+<h2>Overview</h2>
+
+This repository is used to generate the HoTTEST website:  https://hottest-seminar.github.io/
+
+<p>
+The information for each talk is stored in a file in the TalkInfo folder, using a file name like AndyPitts-Sep20.txt.
+See below for details about the format.
+
+<p>
+At the beginning of each term, the termGenerator.py script can be used generate these
+files, with just the essential information filled in.
+After soliciting a title and abstract, you can update the appropriate file.
+
+<p>
+Whenever a TalkInfo file is created or changed, you need to run the
+script <tt>./indexGenerator.py</tt> which updates index.html.
+You can preview this in your local browser to make sure it looks correct.
+Then you commit the changes to the TalkInfo file and index.html, push
+your commit to github, and wait around 30 seconds.
+Then reload the website https://hottest-seminar.github.io/ to check that all is good.
+
+<p>
+If you run <tt>indexGenerator.py</tt> on the day a seminar occurs, it will become a "past" talk.
+If you still want it to be a future talk, you can run:
+<tt>faketime yesterday ./indexGenerator.py</tt>
+(after installing faketime on your system).
+
+<p>
+Similarly, when you get the pdf file after a talk, you put it in the hottestfiles
+folder, following the naming convention there, and update the TalkInfo file to refer to it.
+Then regenerate as described in the previous paragraph, and commit the TalkInfo file,
+the pdf file, and index.html.
+
+<p>
+Dan currently handles adding the YouTube links.
+
+<p>
+See also calendarGenerator.py for how to create the initial Google calendar entries
+for a term.
+
+<h2>Formatting for talk files</h2>
 
 Term: TERM YYYY<br>
 Date: MON DD<br>
@@ -11,39 +51,27 @@ Abstract: ABSTRACT CONTENT<br>
 ABSTRACT CONTENT<br>
 ...<br>
 
-New talk files should be added to the TalkInfo folder.
-The termGenerator.py script can help with this.  See that file for instructions.
-See also calendarGenerator.py for how to create the initial calendar entries
-for a term.
-
-<p>
-After creating/updating talk files, run <tt>./indexGenerator.py</tt>.
-If you are running this on the day a seminar occurs, it will become a "past" talk.
-If you still want it to be a future talk, you can run:
-<tt>faketime yesterday ./indexGenerator.py</tt>
-(after installing faketime on your system).
-
 <p>
 NOTES:
 <ul>
   <li>TERM should be either "Spring" or "Fall" for regular sessions, special terms can be added (such as the Jr. Researcher Event), but a corresponding entry must be added to termIDDict in indexGenerator.py for sorting purposes.</li>
   <li>YYYY is the year.</li>
-  <li>MON should be the shortened form of the month (Jan, Sept, etc. this is just for consistency purposes, as long as MON starts with the correct three letters it will be sorted correctly).</li>
-  <li>DD is the day, if it is a single digit, make sure there is a space between MON and DD.</li>
-  <li>SPEAKER is the name of the speaker</li>
-  <li>SCHOOL/INSTITUTION is the name of the name of the speaker's affiliation, this is okay to leave empty.</li>
-  <li>TALK TITLE is the title of the talk.</li>
-  <li>YOUTUBE LINK is the relevant links, this is okay to leave empty.</li>
-  <li>SLIDE_FILENAME_X are the relevant filenames (no "hottestfiles/" prefix necessary), multiple pdfs can be attached to a single talk and should be seperated by a single space. This is okay to leave empty.</li>
-  <li>ABSTRACT CONTENT is the abstract, which should be split into lines for the desired paragraph breaks. The abstract can be as long as you would like, but it must always be the last entry.</li>
-  <li>HTML can be added to ABSTRACT CONTENT and will be rendered correctly, such as, if you want to include a hyperlink.</li>
+  <li>MON should be the first three letters of the month.</li>
+  <li>DD is the day, as one or two digits.</li>
+  <li>SPEAKER is the name of the speaker, with first name first.</li>
+  <li>SCHOOL/INSTITUTION is the name of the name of the speaker's affiliation; this can be left empty.</li>
+  <li>TALK TITLE is the title of the talk, usually with only the first word and proper nouns capitalized.</li>
+  <li>YOUTUBE LINK is the relevant link.</li>
+  <li>SLIDE_FILENAME_X are the relevant filenames (no "hottestfiles/" prefix necessary); multiple pdfs can be attached to a single talk and should be separated by a single space.</li>
+  <li>ABSTRACT CONTENT is the abstract, with each paragraph as a single long line.  A line break indicates a new paragraph, and there should be no empty lines between paragraphs. The abstract must always be the last entry.</li>
+  <li>HTML can be added to ABSTRACT CONTENT and will be rendered correctly, e.g., if you want to include a hyperlink.</li>
 </ul>
 
 THINGS THAT WILL AFFECT PAGE GENERATION (indexGenerator.py will throw an exception):
 <ul>
   <li>Misspelled line starters</li>
   <li>Improperly formatted term or date entries</li>
-  <li>Missing entries (other than youtube link/pdf/school)</li>
+  <li>Certain missing entries (e.g. Term, Date, Speaker)</li>
   <li>"Abstract:" not being the last entry (the exception that will show up in this case is for missing entries of whatever was below "Abstract:")</li>
   <li>&gt; and &lt; symbols in abstract (must be replaced with &amp;gt; and &amp;lt; to not get following error: yattag.indentation.XMLTokenError) </li>
 </ul>
@@ -52,7 +80,5 @@ THINGS THAT WILL _NOT_ AFFECT PAGE GENERATION:
 <ul>
   <li>File name</li>
   <li>Whitespace differences (either before or after lines, between entry label and content, or general blank lines)</li>
-  <li>Capitalization</li>
-  <li>Missing youtube link/slides/school</li>
   <li>Ordering of entries (besides "Abstract:" which must go last)</li>
 </ul>
