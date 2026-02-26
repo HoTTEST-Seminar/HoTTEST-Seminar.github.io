@@ -43,7 +43,7 @@ for a term.
 Term: TERM YYYY<br>
 Date: MON DD<br>
 Speaker: SPEAKER NAME<br>
-School: SCHOOL/INSTITUTION
+School: SCHOOL/INSTITUTION<br>
 Title: TALK TITLE<br>
 YouTube: YOUTUBE LINK<br>
 Slides: SLIDE_FILENAME_1 SLIDE_FILENAME_2 ... <br>
