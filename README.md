@@ -52,7 +52,7 @@ ABSTRACT CONTENT<br>
 ...<br>
 
 <p>
-NOTES:
+Notes:
 <ul>
   <li>TERM should be either "Spring" or "Fall" for regular sessions, special terms can be added (such as the Jr. Researcher Event), but a corresponding entry must be added to termIDDict in indexGenerator.py for sorting purposes.</li>
   <li>YYYY is the year.</li>
@@ -67,7 +67,7 @@ NOTES:
   <li>HTML can be added to ABSTRACT CONTENT and will be rendered correctly, e.g., if you want to include a hyperlink.</li>
 </ul>
 
-THINGS THAT WILL AFFECT PAGE GENERATION (indexGenerator.py will throw an exception):
+Things that will affect page generation (indexGenerator.py will throw an exception):
 <ul>
   <li>Misspelled line starters</li>
   <li>Improperly formatted term or date entries</li>
@@ -76,7 +76,7 @@ THINGS THAT WILL AFFECT PAGE GENERATION (indexGenerator.py will throw an excepti
   <li>&gt; and &lt; symbols in abstract (must be replaced with &amp;gt; and &amp;lt; to not get the following error: yattag.indentation.XMLTokenError) </li>
 </ul>
 
-THINGS THAT WILL _NOT_ AFFECT PAGE GENERATION:
+Things that will _not_ affect page generation:
 <ul>
   <li>File name</li>
   <li>Whitespace differences (either before or after lines, between entry label and content, or general blank lines)</li>
