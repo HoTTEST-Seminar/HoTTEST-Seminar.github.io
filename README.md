@@ -14,6 +14,7 @@ After soliciting a title and abstract, you can update the appropriate file.
 <p>
 Whenever a TalkInfo file is created or changed, you need to run the
 script <tt>./indexGenerator.py</tt> which updates index.html.
+(This script requires the Yattag Python library.)
 You can preview this in your local browser to make sure it looks correct.
 Then you commit the changes to the TalkInfo file and index.html, push
 your commit to github, and wait around 30 seconds.
