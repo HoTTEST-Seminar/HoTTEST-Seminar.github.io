@@ -2,7 +2,9 @@ Term: Spring 2026
 Date: Mar 5
 Speaker: Ayberk Tosun
 School: Zeroth Research
-Title:
+Title: Constructive and predicative locale theory in univalent foundations
 YouTube:
 Slides:
-Abstract:
+Abstract: I will present a constructive and predicative development of locale theory in HoTT/UF (j.w.w. Martín Escardó), with a particular focus on the theory of spectral and Stone locales. The traditional approach to the predicative development of point-free topology is to work with presentations of locales known as <i>formal topologies</i>. We take a different approach: we work directly with frames and locales, keeping careful track of the universes involved and adopting certain size assumptions to ensure that the theory remains amenable to predicative development. Although many fundamental constructions of locale theory appear to rely on impredicativity, these can be circumvented under rather natural size assumptions.
+I will discuss the notions of spectral, regular, zero-dimensional, and Stone locales in this foundational setting, and present a predicative form of Stone duality for spectral locales: the category of large, locally small, and small-complete spectral locales (and spectral maps) is dually equivalent to the category of small distributive lattices. I will also present a predicative construction of the patch locale of a spectral locale, which allows us to exhibit Stone locales as a coreflective subcategory of spectral locales. Finally, I will discuss the point-free topology of Scott domains, whose Scott locales are always spectral. This links our development of locale theory to de Jong and Escardó's predicative development of domain theory in HoTT/UF.
+The development is entirely formalized in Agda as part of Escardó's TypeTopology library: <a href="https://martinescardo.github.io/TypeTopology/Locales.index.html">https://martinescardo.github.io/TypeTopology/Locales.index.html</a>
