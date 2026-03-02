@@ -68,7 +68,7 @@ Notes:
   <li>HTML can be added to ABSTRACT CONTENT and will be rendered correctly, e.g., if you want to include a hyperlink.</li>
 </ul>
 
-Things that will affect page generation (indexGenerator.py will throw an exception):
+Things that will affect page generation (<tt>indexGenerator.py</tt> will throw an exception):
 <ul>
   <li>Misspelled line starters</li>
   <li>Improperly formatted term or date entries</li>
