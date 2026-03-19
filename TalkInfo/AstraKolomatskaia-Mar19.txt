@@ -3,7 +3,7 @@ Date: Mar 19
 Speaker: Astra Kolomatskaia
 School: Wesleyan University
 Title: Displayed Type Theory, intervals, and analytic higher categorical structures
-YouTube:
+YouTube: https://youtu.be/WRDpXz9-WQo
 Slides:
 Abstract:
 I have historically encountered a number of difficulties in communicating my work to others. The process of preparing this talk has thus involved engaging with throughlines in the type theory literature and has helped me identify places in which building bridges was necessary.
