@@ -3,7 +3,7 @@ Date: Apr 2
 Speaker: Szumi Xie
 School: Eötvös Loránd University
 Title: The groupoid-syntax of type theory is a set
-YouTube:
+YouTube: https://youtu.be/pC6VB-hDTpQ
 Slides:
 Abstract: Categories with families (CwFs) have been used to define the semantics of type theory in type theory. In the setting of homotopy type theory, one of the limitations of the traditional notion of CwFs is the requirement to set-truncate types, which excludes models based on univalent categories, such as the standard set model. To address this limitation, I will introduce the notion of groupoid categories with families (GCwFs), which truncates types at the groupoid level and incorporates coherence equations.
 I will demonstrate that the initial GCwF for a type theory with some type formers is set-truncated, using a technique called α-normalization.  This allows us to utilize the conventional intrinsic syntax of type theory while enabling interpretations in semantically richer and more natural models.
