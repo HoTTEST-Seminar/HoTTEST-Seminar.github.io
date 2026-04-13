@@ -2,7 +2,11 @@ Term: Spring 2026
 Date: Apr 16
 Speaker: Freek Geerligs
 School: University of Gothenburg
-Title:
+Title: Synthetic Stone Duality
 YouTube:
 Slides:
 Abstract:
+In this talk, we will give an overview of Synthetic Stone duality (<a href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.TYPES.2024.3">https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.TYPES.2024.3</a>). We will then discuss some work in progress on synthetic Stone duality.
+Synthetic Stone duality is an extension of homotopy type theory with four axioms.  These axioms are strong enough to decide Bishop's omniscience principles. We introduce a (synthetic) topology on any type, such that all functions are continuous.  We are interested in Stone spaces and compact Hausdorff spaces, where the topology behaves as one would expect. In particular, we can define the (topological) interval and show that all functions are continuous in the epsilon-delta sense.
+Currently, we are working on a paper with a method for calculating the non-abelian cohomology for compact Hausdorff spaces. We are also interested in the relation between topological paths and identities after taking the shape modality of the interval.
+This talk will contain joint work with Reid Barton, Felix Cherubini, Thierry Coquand, and Hugo Moeneclaey.
