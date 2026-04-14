@@ -2,7 +2,7 @@ Term: Spring 2026
 Date: Apr 16
 Speaker: Freek Geerligs
 School: University of Gothenburg
-Title: Synthetic Stone Duality
+Title: Synthetic Stone duality
 YouTube:
 Slides:
 Abstract:
