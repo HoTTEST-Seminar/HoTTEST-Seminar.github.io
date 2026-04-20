@@ -2,7 +2,7 @@ Term: Spring 2026
 Date: Mar 19
 Speaker: Astra Kolomatskaia
 School: Wesleyan University
-Title: Displayed Type Theory, intervals, and analytic higher categorical structures
+Title: Displayed Type Theory: indexed modalities and analytic higher structures
 YouTube: https://youtu.be/WRDpXz9-WQo
 Slides: Kolomatskaia-2026-03-19.pdf
 Abstract:
