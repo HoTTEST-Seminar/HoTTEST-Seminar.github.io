@@ -4,7 +4,7 @@ Speaker: Astra Kolomatskaia
 School: Wesleyan University
 Title: Displayed Type Theory, intervals, and analytic higher categorical structures
 YouTube: https://youtu.be/WRDpXz9-WQo
-Slides:
+Slides: Kolomatskaia-2026-03-19.pdf
 Abstract:
 I have historically encountered a number of difficulties in communicating my work to others. The process of preparing this talk has thus involved engaging with throughlines in the type theory literature and has helped me identify places in which building bridges was necessary.
 My joint work with Mike Shulman introduced <em>Displayed Type Theory</em> [dTT], which syntactically admits a construction of semi-simplicial types in a way that then semantically admits interpretation into arbitrary Grothendieck (∞,1)-topoi. This result is not novel as stated: First, it is not a syntactic construction in Book HoTT. Second, syntactic constructions of SSTs were a foremost consideration in the development of 2LTT, and Elif Üsküplü's analysis shows that the inner layer of 2LTT, when enriched with an axiom of cofibrant exo-nats, is general with respect to Grothendieck (∞,1)-topos semantics.
