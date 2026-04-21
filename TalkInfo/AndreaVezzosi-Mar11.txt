@@ -4,7 +4,8 @@ Speaker: Andrea Vezzosi
 School: IT University of Copehagen
 Title: Cubical Agda and its Extensions
 YouTube: https://www.youtube.com/watch?v=9RFt1Q2pHE8
-Slides: Vezzosi-2021-03-11-HoTTEST.pdf
+Slides: 
 Abstract: Cubical Agda is a dependently typed language with Univalence and Higher Inductive Types based on Cubical Type Theory. In this talk we will see how its features interact with pattern matching, copatterns, and interactive development. 
 We will then introduce the universe of non-fibrant types, where the  interval of cubical type theory lives, and which will let us talk  about strict equality from within the type theory. 
 Finally we will see the extension with a modality for guarded recursion, providing a type-based approach to productivity of corecursive definitions and an abstract way to construct step-indexed models of programming languages. 
+"Slides" available at <a href="https://github.com/Saizan/hottest-talk">github.com/Saizan/hottest-talk</a>.
