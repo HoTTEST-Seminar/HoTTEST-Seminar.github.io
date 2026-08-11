@@ -7,10 +7,11 @@ The information for each talk is stored in a file in the TalkInfo folder, using 
 See below for details about the format.
 
 <p>
-At the beginning of each term, the termGenerator.py script can be used generate these
+At the beginning of each term, the <tt>termGenerator.py</tt> script can be used generate these
 files, with just the essential information filled in.
-See also calendarGenerator.py for how to create the initial Google calendar entries
-for a term.
+See also <tt>calendarGenerator.py</tt> for how to create the initial Google calendar entries
+for a term.  We don't generally put titles in the calendar, to save work and
+reduce duplication of information.
 
 <p>
 After soliciting a title and abstract, you can update the appropriate file.
@@ -55,7 +56,7 @@ ABSTRACT CONTENT<br>
 <p>
 Notes:
 <ul>
-  <li>TERM should be either "Spring" or "Fall" for regular sessions, special terms can be added (such as the Jr. Researcher Event), but a corresponding entry must be added to termIDDict in indexGenerator.py for sorting purposes.</li>
+  <li>TERM should be either "Spring" or "Fall" for regular sessions, special terms can be added (such as the Jr. Researcher Event), but a corresponding entry must be added to termIDDict in <tt>indexGenerator.py</tt> for sorting purposes.</li>
   <li>YYYY is the year.</li>
   <li>MON should be the first three letters of the month.</li>
   <li>DD is the day, as one or two digits.</li>
