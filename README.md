@@ -9,6 +9,10 @@ See below for details about the format.
 <p>
 At the beginning of each term, the termGenerator.py script can be used generate these
 files, with just the essential information filled in.
+See also calendarGenerator.py for how to create the initial Google calendar entries
+for a term.
+
+<p>
 After soliciting a title and abstract, you can update the appropriate file.
 
 <p>
@@ -34,10 +38,6 @@ the pdf file, and index.html.
 
 <p>
 Dan currently handles adding the YouTube links.
-
-<p>
-See also calendarGenerator.py for how to create the initial Google calendar entries
-for a term.
 
 <h2>Formatting for talk files</h2>
 

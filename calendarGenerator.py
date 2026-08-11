@@ -7,7 +7,10 @@
 #
 # The output is a file CalendarInfo/TermYYYY.csv, containing one
 # row for each line of TermYYYY.txt.  The csv file can be imported
-# into Google Calendar to create the calendar entries.
+# into Google Calendar to create the calendar entries:
+#
+#   Gear icon > Settings > Import & Export
+#    > select TermYYY.csv and HoTTEST calendar
 #
 # Note:  If you import it a second time, it will create duplicate
 # entries.
@@ -72,7 +75,8 @@ def generate_calendar(term, force=False):
 
         writer.writerow(row)
 
-    print("Output file can be imported into Google Calendar.")
+    print("Output file can be imported into Google Calendar:")
+    print("Gear icon > Settings > Import & Export > select TermYYY.csv and HoTTEST calendar")
 
 if __name__ == "__main__":
     if len(sys.argv) == 2 or (len(sys.argv) == 3 and sys.argv[1] == '-f'):
