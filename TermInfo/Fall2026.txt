@@ -1,0 +1,6 @@
+Meven Lennon-Bertrand; Sep 24; Inria – IRIF, Université Paris Cité
+Steve Awodey; Oct 8; Carnegie Mellon University
+Chuangjie Xu; Oct 22; 
+Owen Milner; Nov 5; Carnegie Mellon University
+Daniël Otten; Nov 19; University of Amsterdam
+Owen Lynch; Dec 3; Oxford University and Topos Research, UK
