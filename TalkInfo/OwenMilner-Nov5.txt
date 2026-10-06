@@ -1,7 +1,7 @@
 Term: Fall 2026
 Date: Nov 5
 Speaker: Owen Milner
-School: Carnegie Mellon University
+School: The University of Gothenburg
 Title:
 YouTube:
 Slides:
