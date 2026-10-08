@@ -3,8 +3,8 @@ Date: Oct 8
 Speaker: Steve Awodey
 School: Carnegie Mellon University
 Title: Path types in Algebraic Type Theory
-YouTube:
-Slides:
+YouTube: https://youtu.be/XukrhxOBjUs
+Slides: Awodey-2026-10-08-HoTTEST.pdf
 Abstract: We propose a new approach to the semantics of identity types in intensional Martin-Löf type theory. The setting is quite general, assuming only a category with finite limits and an exponentiable interval. It therefore applies to many different cases such as clans [1], model categories [2], path categories [3], categories with families [4], and natural models [5]. This approach is being used in the HoTTLean project [6], where it has already been formalized in Lean.
 The specification of extensional identity types in natural models paralleled that of the other type formers Σ and Π, but the treatment of the intensional case was less uniform. The latter was updated in [7] to a cleaner account suggested by R. Garner using polynomial functors. Here that approach is improved further by employing an interval to give a specification entirely analogous to that of the other type formers; it requires namely a pullback diagram involving the universe and its path type.
 The interval is also used to specify a (Hurewicz) fibration structure on the universe. The combination of these two conditions suffices to validate the usual rules for intensional identity types. The presence of an interval moreover relates the new approach to that of cubical type theory [8].
