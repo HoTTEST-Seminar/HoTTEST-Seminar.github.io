@@ -2,7 +2,12 @@ Term: Fall 2026
 Date: Oct 22
 Speaker: Chuangjie Xu
 School: 
-Title:
+Title: What is a successor within an ordinal, constructively?
 YouTube:
 Slides:
-Abstract:
+Abstract: Constructive ordinal theory is subtle. For example, the existence of an exponentiation operation on ordinals satisfying the full classical specification implies excluded middle [1]. This talk turns to a seemingly more elementary question: what does it mean for one element of an ordinal to be a successor of another?
+To see why this is not obvious, consider Brouwer trees defined as a quotient inductive-inductive type [2]. This type is an ordinal and has a constructor producing the least element strictly above its input, which is a natural candidate for a successor operation. Does this operation also satisfy the familiar property that, for every x, each element below the successor of x is either below x or equal to x? If this cannot be proved constructively, could another successor operation on Brouwer trees satisfy it?  If not, in which other ordinals does such an operation exist?
+Such questions lead us to compare several notions of successor within an ordinal, working in homotopy type theory. These notions coincide classically but separate constructively. We study implications between them and examine their mathematical roles, for instance in determining which successor properties exclude limit elements.  We also consider examples drawn from the ordinal of ordinals, plump ordinals, and Cantor normal forms. The results are formalized in Agda.
+The aim is to open a discussion about which successor properties are needed for different mathematical purposes and how the answers might guide the constructive development of ordinal theory.
+[1] T. de Jong, N. Kraus, F. Nordvall Forsberg and C. Xu. Ordinal exponentiation in homotopy type theory. LICS 2025.
+[2] N. Kraus, F. Nordvall Forsberg and C. Xu. Type-theoretic approaches to ordinals. TCS, vol. 957, 2023.
