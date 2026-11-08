@@ -4,7 +4,7 @@ Speaker: Owen Milner
 School: The University of Gothenburg
 Title: Sinh triples and 2-groups in homotopy type theory
 YouTube:
-Slides:
+Slides: Milner-2026-11-05-HoTTEST.pdf
 Abstract: In HoTT, we can define ''n-groups'' to be pointed, connected and n-truncated spaces [2]. Classically there exist many equivalent ''algebraic'' presentations of n-groups [3]. Especially relevant for this talk: 2-groups can be presented as crossed modules, or as certain monoidal groupoids, or as ''Sinh triples'' where the latter consist of a group G, an abelian group M with an action by G, and an element c ∊ H^3(G;M) [1, 5]. It is natural to ask whether there are equivalences in HoTT which parallel the classical equivalences between different presentations of n-groups.
 In this talk we will review some of our joint work with Perry Hart [4], which included a proof that the set truncation of the type of 2-groups is equivalent to the set truncation of the type of Sinh triples in HoTT. We will then discuss some extensions.
 [1] Baez, J. and A. Lauda, Higher dimensional algebra V: 2-groups, Theory and Applications of Categories. 12. (2004)
