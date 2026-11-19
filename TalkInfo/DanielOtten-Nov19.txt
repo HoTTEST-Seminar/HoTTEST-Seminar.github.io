@@ -3,7 +3,7 @@ Date: Nov 19
 Speaker: Daniël Otten
 School: University of Amsterdam
 Title: Eliminating dependent size-change termination
-YouTube:
+YouTube: https://youtu.be/wCx7D8IqQgw
 Slides:
 Abstract: Proof assistants let users define dependent functions using pattern matching and recursive calls. This is more convenient than using the eliminators of indexed inductive types directly. However, these features can extend the type theory: unrestricted pattern matching makes axiom K provable, which contradicts univalence. We therefore need to justify them using an interpretation into eliminators. Such interpretations exist for pattern matching (both with and without K), but have only been considered for a limited form of recursive calls: a single function where there is one argument that is structurally smaller in every recursive call. Meanwhile, Agda, Arend, Dedukti/Lambdapi, Idris, and Isabelle/HOL allow all mutually recursive functions that satisfy the size-change termination criterion: along every infinite sequence of calls, some chain of arguments decreases infinitely often.
 Using techniques from cyclic proof theory and stream automata theory, we interpret size-change terminating functions out of inductive types into eliminators. The key step is a general translation from abstract cyclic proofs into inductive proofs. For size-change terminating functions, this corresponds to repeatedly inlining auxiliary definitions, introducing induction hypotheses for different subterms in the right order, and using them to replace recursive calls.
